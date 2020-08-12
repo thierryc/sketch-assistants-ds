@@ -1,31 +1,7 @@
-import { AssistantPackage, RuleDefinition } from '@sketch-hq/sketch-assistant-types'
-
-const tokens: RuleDefinition = {
-  rule: async (context) => {
-    context.utils.report('Hello world')
-  },
-  name: '@ap.cx/sketch-assistant-colors/tokens',
-  title: 'Colors Tokens',
-  description: 'Reports a tokens message',
-}
-
-const colorBlind: RuleDefinition = {
-  rule: async (context) => {
-    context.utils.report('Hello world')
-  },
-  name: '@ap.cx/sketch-assistant-colors/colorBlind',
-  title: 'Colors Blindless',
-  description: 'Reports a colorBlind message',
-}
-
-const similarColors: RuleDefinition = {
-  rule: async (context) => {
-    context.utils.report('Hello world')
-  },
-  name: '@ap.cx/sketch-assistant-colors/similarColors',
-  title: 'Similar Colors',
-  description: 'Reports a Similar Colors very close or too close',
-}
+import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
+import tokens from './rules/tokens'
+import colorBlind from './rules/colorBlind'
+import similarColors from './rules/similarColors'
 
 const assistant: AssistantPackage = async () => {
   return {
