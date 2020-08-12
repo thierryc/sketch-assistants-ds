@@ -1,0 +1,45 @@
+{
+  "name": "@ap.cx/sketch-assistant-colors",
+  "homepage": "https://github.com/thierry-c/sketch-assistants-ds/tree/main/assistants/colors",
+  "version": "1.0.0",
+  "main": "dist/index",
+  "types": "dist/index",
+  "sketch": "dist/sketch.js",
+  "license": "MIT",
+  "repository": "github:thierry-c/sketch-assistants-ds",
+  "sketch-assistant": {
+    "title": "Sketch Assistant Colors",
+    "description": "Sketch Assistant Colors for Design System (core)",
+    "icon": ""
+  },
+  "author": {
+    "name": "Thierry Charbonnel",
+    "url": "https://www.anotherplanet.io"
+  },
+  "keywords": [
+    "organization",
+    "sketch",
+    "sketch files",
+    "sketch assistant",
+    "assistant",
+    "design ops",
+    "colors",
+    "design system"
+  ],
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest --no-cache",
+    "build": "yarn build:node && yarn build:sketch",
+    "build:node": "tsc --build",
+    "build:sketch": "webpack",
+    "package-tarball": "yarn build && yarn pack"
+  },
+  "devDependencies": {
+    "@sketch-hq/sketch-assistant-utils": "6.0.0"
+  },
+  "dependencies": {
+    "@sketch-hq/sketch-assistant-types": "6.0.0"
+  }
+}
