@@ -33,7 +33,7 @@
     "test": "jest --no-cache",
     "build": "yarn build:node && yarn build:sketch",
     "build:node": "tsc --build",
-    "build:sketch": "webpack",
+    "build:sketch": "webpack --output-library _sketch --output-library assistants --output-library `node -p \"require('./package.json').name\"`",
     "package-tarball": "yarn build && yarn pack"
   },
   "devDependencies": {
