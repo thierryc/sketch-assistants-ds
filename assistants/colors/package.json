@@ -40,6 +40,7 @@
     "@sketch-hq/sketch-assistant-utils": "6.0.0"
   },
   "dependencies": {
-    "@sketch-hq/sketch-assistant-types": "6.0.0"
+    "@sketch-hq/sketch-assistant-types": "6.0.0",
+    "tslint": "^6.1.3"
   }
 }
