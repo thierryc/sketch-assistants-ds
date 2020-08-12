@@ -10,7 +10,7 @@
   "sketch-assistant": {
     "title": "Sketch Assistant Colors",
     "description": "Sketch Assistant Colors for Design System (core)",
-    "icon": ""
+    "icon": "https://github.com/thierryc/sketch-assistants-ds/blob/master/assistants/colors/icon.png?raw=true"
   },
   "author": {
     "name": "Thierry Charbonnel",
