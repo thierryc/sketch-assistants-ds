@@ -1,5 +1,5 @@
 import { AssistantPackage } from '@sketch-hq/sketch-assistant-types'
-import tokens from './rules/tokens'
+import colorTokens from './rules/colorTokens'
 import colorBlind from './rules/colorBlind'
 import similarColors from './rules/similarColors'
 
@@ -17,10 +17,10 @@ const colors: string[] = jsonColors
 const assistant: AssistantPackage = async () => {
   return {
     name: '@ap.cx/sketch-assistant-colors',
-    rules: [tokens, colorBlind, similarColors],
+    rules: [colorTokens, colorBlind, similarColors],
     config: {
       rules: {
-        '@ap.cx/sketch-assistant-colors/tokens': {
+        '@ap.cx/sketch-assistant-colors/colorTokens': {
           active: true,
           severity: 3,
           colors,
