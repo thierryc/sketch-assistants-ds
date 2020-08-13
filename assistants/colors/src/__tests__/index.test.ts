@@ -8,6 +8,8 @@ test('test assistant', async () => {
     resolve(__dirname, './empty.sketch'),
     Assistant,
   )
-  expect(violations[0].message).toBe('Hello world')
+  expect(violations[0].message).toBe(
+    '["#581374","#C40050","#F5F5F5","#FFFFFF","#000000","#333333"]',
+  )
   expect(ruleErrors).toHaveLength(0)
 })
